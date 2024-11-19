@@ -1,0 +1,29 @@
+{
+  "name": "ba",
+  "displayName": "BrasLang",
+  "description": "Is a Brazilian language",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeff-dev-it/BrasExt"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bras_lang",
+      "aliases": ["BrasLang", "bras_lang"],
+      "extensions": [".ba"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bras_lang",
+      "scopeName": "source.bras_lang",
+      "path": "./syntaxes/bras_lang.tmLanguage.json"
+    }]
+  }
+}
